@@ -40,6 +40,7 @@
     for (let i = 0; i < markers.length; i++) {
         const bounds = rectangle.getBounds();
         const isInBounds = bounds.contains(markers[i]);
+
         const content = isInBounds ? 'in bounds' : 'not in bounds';
         const marker = L.marker(markers[i])
                         .addTo(map)
